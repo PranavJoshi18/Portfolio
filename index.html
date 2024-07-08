@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="nav">
+        <h2>Pranav Joshi</h2>
+        <div class="menu">
+            <div class="options">
+                <a href="#about">About</a>
+                <a href="#about">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <img class="close" src="assets/close.png" alt="close" width="20px" height="20px">
+        </div>
+        <img class="hamburger" src="assets/apps.png" alt="hamburger" width="20px" height="20px">
+    </nav>
+    <main class="main">
+        <section class="profile">
+            <img src="assets/dp.jpg" alt="Profile Picture" width="300px" height="300px">
+            <div class="abt">
+                <div class="text">
+                    <p class="p1">Hello I'm</p>
+                    <h2>Pranav Joshi</h2>
+                    <p class="p2">Frontend Developer</p>
+                </div>
+                <div class="buttons">
+                    <button class="cv" onclick="window.open('assets/Pranav_Joshi.pdf')">Download Resume</button>
+                    <button class="contact" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/pranav-joshi-77b585226/" target="_blank"><img src="assets/linkedin.png" alt="linkedin" width="30px" height="30px"></a>
+                    <a href="https://github.com/PranavJoshi18" target="_blank"><img src="assets/github.png" alt="github" width="30px" height="30px"></a>
+                </div>
+            </div>
+        </section>
+        <section class="about-me" id="about">
+            <div class="text">
+                <p>Get to Know More</p>
+                <h2>About Me</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card1">
+                        <h2>Education</h2>
+                        <h3>IIT Madras<span style="margin-left: 4.3rem;">8.84</span></h3>
+                        <span>Programming in DS and Programming</span>
+                        <h3>DCE Gurgaon<span style="margin-left: 2.5rem;">8.52</span></h3>
+                        <span>BTech-CSE</span>
+                        <h3>DPS RK Puram<span style="margin-left: 2rem;">91%</span></h3>
+                        <span>High School</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card2">
+                        <h2>About</h2>
+                        <span>I am currently a 3rd Year Undergrad in BTech-CSE. I like to work and play with data and therefore I'm currently learning skills required for being a data scientist.
+                            Besides that, I'm also polishing my skills of Java, OPPs, DSA and Python programming language.
+                            I am passionate about Open-Source and to help my fellow programmers!
+                            Moreover, I am a strong believer that Learning should always be a part of our lives and I am always happy to learn something new everyday!</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card3">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML, CSS & JS</li>
+                            <li>Python & Pandas</li>
+                            <li>Tableau</li>
+                            <li>MySQL & MS Excel</li>
+                            <li>Beautiful Soup</li>
+                            <li>Scikit-Learn</li>
+                            <li>Maths & Statistics</li>
+                            <li>Java with OPPS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects", id="projects">
+            <div class="text">
+                <p>Browse My Recent</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="proj-list">
+                <div class="proj">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LLl97ySJMF8q-qvv3xM9afNYLMTZOJhhwg&s" alt="disney logo" width="280px" height="210px">
+                    <h2>Disney Data Extraction</h2>
+                    <a class="button-tag" href="https://github.com/PranavJoshi18/Disney-Movies-Data" target="_blank"><button>See More</button></a>
+                </div>
+                <div class="proj">
+                    <img src="https://projects-static.raspberrypi.org/projects/rock-paper-scissors/822e9ebd4df5d0a692baee5c4af998d336534b58/en/images/rock-paper-scissors.png" alt="rock-paper-scissors" width="280px" height="210px">
+                    <h2>RPS Using CV</h2>
+                    <a class="button-tag" href="https://github.com/PranavJoshi18/Rock-Paper-Scissors-Using-CV2" target="_blank"><button>See More</button></a>
+                </div>
+                <div class="proj">
+                    <img src="assets/tableau.png" alt="tableau" width="280px" height="210px">
+                    <h2>Tableau Dashboards</h2>
+                    <a class="button-tag" href="https://public.tableau.com/app/profile/pranav.joshi4031/viz/IMDB_17169812445950/Dashboard2" target="_blank"><button>See More</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="text">
+                <p>Get in Touch</p>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="align">
+                <div class="contact-container">
+                    <div class="mail">
+                        <a href="mailto:rattlerelax@gmail.com" target="_blank"><img src="assets/email.png" alt="email" width="30px" height="30px"></a>
+                        <span>rattlerelax@gmail.com</span>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/pranav-joshi-77b585226/" target="_blank"><img src="assets/linkedin.png" alt="linkedin" width="30px" height="30px" style="border-radius: 50%;"></a>
+                        <span>Linkedin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <nav class="footer">
+                <div class="options">
+                    <a href="#about">About</a>
+                    <a href="#about">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <p>Copyright © 2024 Pranav Joshi. All Rights Reserved.</p>
+        </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.options {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.hamburger, .close {
+    position: absolute;
+    opacity: 0;
+}
+
+.main {
+    margin-bottom: 12rem;
+}
+
+.main .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    height: 80vh;
+}
+
+.main .profile img {
+    border-radius: 50%;
+}
+
+.main .profile .abt  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .profile .abt .p1 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -1.5rem;
+    color: rgb(70, 70, 70);
+}
+
+.main .profile .abt h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0rem;
+}
+
+.main .profile .abt .p2 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 15px;
+    color: rgb(70, 70, 70);
+}
+
+.main .profile .abt .buttons {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main .profile .abt .buttons button, .projects button {
+    cursor: pointer;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    transition: all .4s ease;
+}
+
+.main .profile .abt .buttons .contact, .projects button {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cv:hover {
+    background-color: black;
+    color: white;
+}
+
+.main .profile .abt .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.card-container {
+    margin-top: 5rem;
+    position: relative;
+    width: 600px;
+    height: 420px;
+    left: calc(50% - 280px);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 7rem;
+}
+
+div.card {
+    padding: 1rem;
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    top:0%;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-40px);
+    transition: .4s ease;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    transform: translateX(50px);
+    transition: .4s ease;
+}
+
+.about-me .text, .projects .text, .contact .text {
+    text-align: center;
+}
+
+.about-me .text h2, .projects .text h2, .contact .text h2{
+    margin-top: -1rem;
+    font-size: 40px;
+}
+
+.card1 h2 {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card1 h3 {
+    margin-top: 3rem;
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+}
+
+.card1 span {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.card2 h2 {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card2 span {
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+.card3 h2 {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card3 ul {
+    font-style: italic;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+.proj-list {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    margin-bottom: 7rem;
+}
+
+.proj-list .proj {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: 2px solid grey;
+    border-radius: 2rem;
+    row-gap: 1rem;
+}
+
+.proj-list .proj img {
+    border-radius: 1.5rem;
+    border: 1px solid rgb(139, 139, 139);
+}
+
+.contact .align{
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contact-container {
+    margin-top: 0.1rem;
+    margin-bottom: -7rem;
+    border: 2px solid grey;
+    border-radius: 3rem;
+    width: 420px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .contact-container .mail, .linkedin{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.contact .contact-container span{
+    font-weight: 500;
+}
+
+footer {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer nav.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 1rem;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 732px) {
+    .options {
+        position: fixed;
+        left: -100%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: left .4s;
+        background-color: rgb(85, 196, 248);
+    }
+    .close-add {
+        position: absolute;
+        opacity: 1;
+        top: 8.5%;
+        right: 5%;
+        cursor: pointer;
+    }
+    .hamburger {
+        position: absolute;
+        opacity: 1;
+        right: 5%;
+        top: 8.5%;
+        cursor: pointer;
+    }
+    .hide {
+        right: -10000%;
+    }
+    .show-options {
+        left: 0%;
+    }
+    .main {
+        margin-top: 7rem;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+    div.card-container {
+        margin-top: 8rem;
+        position: relative;
+        width: 70%;
+        height: 20%;
+        left: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    div.card {
+        width: 90%;
+        height: 19rem;
+        box-shadow: 1rem 1rem 1rem 1rem rgba(0 0 0 / 0.15);
+    }
+    .card:not(:first-child) {
+        margin-top: -260px;
+        margin-left: 0;
+    }
+    .card:hover {
+        transform: translateY(-50px);
+        transition: all .4s ease;
+        z-index: 1;
+    }
+    .card:hover ~ .card {
+        position: relative;
+        transform: translateY(50px);
+        transition: .4s ease;
+    }
+    .card1 h2 {
+        margin-top: 1rem;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .card1 h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: rgb(75, 75, 75);
+    }
+    .card1 span {
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+    .card2 h2 {
+        margin-top: 1rem;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .card2 span {
+        font-size: 0.78rem;
+        font-style: italic;
+    }
+    .card3 h2 {
+        margin-top: 1rem;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .card3 ul {
+        font-style: italic;
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+    .proj-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    
+}
