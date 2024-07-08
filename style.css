@@ -288,7 +288,7 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        padding-left: 1rem;
         transition: left .4s;
         background-color: rgb(85, 196, 248);
     }
